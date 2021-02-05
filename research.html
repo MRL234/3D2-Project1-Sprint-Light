@@ -1,0 +1,288 @@
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Homepage - Semantic</title>
+    <link rel="stylesheet" href="./bxslider-4-4.2.12/dist/jquery.bxslider.css">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="./bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./6.22.css">
+    <link rel="stylesheet" type="text/css" href="./ui_library/Semantic-UI-CSS-master/semantic.min.css">
+    <!-- 제이쿼리 include -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- semantic ui js include -->
+    <script src="ui_library/Semantic-UI-CSS-master/semantic.min.js"></script>
+    
+
+  <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+    .ui.inverted.vertical.footer.segment {
+          text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 3em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment.p {
+      padding: 4em 0em;
+    
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+      // slider
+      // Initialize the slider
+  $(document).ready(function(){
+    $('.slider').bxSlider({
+        auto: true,
+        speed: 200,
+        stopAutoOnClick: true,
+        pager: true,
+        pagerType: "short"
+    });
+  });
+    })
+  
+      
+  </script>
+</head>
+<body>
+
+<!-- Following Menu -->
+<div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a href="./6.22.html" class="header item">
+        3D2 Project1: Sprints
+      </a>
+      <a href="./research.html" class="active item">Research</a>
+         <a href="./process1.html" class="item">Process</a>
+      
+    </div>
+  </div>
+<div class="ui vertical stripe segment">
+    <div class="ui text container">
+      <h3 class="ui header">Research</h3>
+        <br>
+
+ <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+
+          <h3 class="ui header">Terra Lumina</h3>
+            <br>
+          <p>❍ TERRA LUMINA concept is an enchanted night walk into a bright future which was held in Toronto Zoo 2019.</p>
+            <p>❍ After the animals have gone to sleep, guests are invited to step through a portal of light into the year 2099, where they will discover a new vision of the future.</p>
+            <p>❍ it takes visitors along a 1.5 kilometre multimedia night walkwith light effects, video projection, and an original score.</p>
+            <p>❍ Their creative and technical teams shaped an enchanted world that shows how we can each make the impossible, possible.</p>
+ <p>https://momentfactory.com/news/terra-lumina-opening-toronto-zoo</p>
+           
+        
+        </div>
+        <div class="six wide right floated column">
+          <img src="./img/terralumina.jpg"class="ui large bordered rounded image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+ <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Keith Sonnier</h3>
+            <br>
+          <p>❍ Keith Sonnier is a Postminimalist video and light artist. Sonnier created his first artwork using neon in 1968.</p>
+            <p>❍ A neon tube is a sealed glass tube with a metal electrode at each end, filled with one of a number of gases at low pressure.</p>
+            <p>❍ He has been one of the most successful with this technique.</p>
+            <p>❍ His pieces tend to include light tubes, aluminum and other objects to create electric light scuptrures.</p>
+           
+           <p>https://www.alconlighting.com/blog/home/led-innovations-art-top-artists-use-light-medium/</p>
+        
+        </div>
+        <div class="six wide right floated column">
+          <img src="./img/keith.jpg
+                    "class="ui large bordered rounded image">
+        </div>
+      </div>
+    </div>
+  </div>
+     <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">Illuminated LED Art Panels </h3>
+            <br>
+          <p>❍ This have the power to create wonderful lighting and a calm ambiance through backlit LED technology and bespoke panel art images.
+</p>
+            <p>❍ These panels can be used in endless ways: operating theatres, waiting rooms, MRI scanner rooms, paediatric wards and many more.</p>
+            <p>❍ As healthcare moves to adopting less clinical environments and more patient friendly spaces, this are vital in creating spaces that help to increase recovery time, reduce stress and less anxiety while putting patients at ease.</p>
+            <p>https://lipmedical.com/news/illuminated-led-art-panels/</p>
+           
+        
+        </div>
+        <div class="six wide right floated column">
+          <img src="./img/window.jpg"class="ui large bordered rounded image">
+        </div>
+      </div>
+    </div>
+  </div>
+     <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">The Great Wave</h3>
+            <br>
+          <p>❍ The Great Wave of Kanawaga, also known as The Great Wave, is one of the most famous examples of Japanese art in the world.</p>
+            <p>❍ The most eye-catching features of the painting is the extended wave as it is about to break with the crash of its claw-like crest.
+</p>
+            <p>❍ The beautiful dark blue pigment used by Hokusai, clled Prussian Blue, was a new material at the time.</p>
+            <p>❍ The wave is about to strike the boats as if it were an enormous monter, one which seems to symbolise the irresistible force of nature and the weakness of human beings. </p>
+            <p>❍ This blue color and the wave gave me some idea of creating my light.
+</p>
+           <p>https://theculturetrip.com/asia/japan/articles/hokusai-s-great-wave/</p>
+           
+        
+        </div>
+        <div class="six wide right floated column">
+          <img src="./img/wave.jpg"class="ui large bordered rounded image">
+        </div>
+      </div>
+    </div>
+  </div>
+     <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">LED Pixel Art</h3>
+            <br>
+          <p>❍ It is a nostalgically designed screen that displays your choice of animated, LED pixel art, giving you a place to view retro-flavored designs.</p>
+            <p>❍ It's controlled via Blutooth through an iOS or Android App.</p>
+            <p>❍ This and the retro images which is cluded retro game character gave me an idea of simple but fun concept of light project such as Super Mario and PacMan.</p>
+            <p>https://ledpixelart.com/</p>
+           
+        
+        </div>
+        <div class="six wide right floated column">
+          <img src="./img/pixel.gif"class="ui large bordered rounded image">
+        </div>
+      </div>
+    </div>
+  </div>
+     
+</div>
+    </div>
+</body>
+<div class="ui inverted vertical footer segment">
+    <p>© 3D2 Project Minyeong Lim Winter 2021</p>
+  </div>
+</html>

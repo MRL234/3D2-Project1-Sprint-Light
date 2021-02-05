@@ -1,0 +1,7 @@
+6.22
+스크럼
+https://www.awwwards.com/websites/portfolio/
+
+조건문 : if else = return (this.price >= 200000) ? true : false; 이렇게 쓸수있ㅇ음
+
+------------------------------------------------------------------------------------
